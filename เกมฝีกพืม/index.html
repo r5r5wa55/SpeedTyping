@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Typing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="level-btn" class="level-btn">
+        <i class="fas fa-cog"></i>
+    </button>
+    <div class="setting" id="setting">
+        <form id="level-form">
+            <label for="" >ระดับความยาก :</label>
+            <select  id="level">
+                <option value="easy">ง่าย</option>
+                <option value="medium">ปานกลาง</option>
+                <option value="hard">ยาก</option>
+            </select>
+        </form>
+    </div>
+    <div class="containner">
+        <h2>เกมพิมพ์เร็ว | Speed Typing</h2>
+        
+        <h1 class="word"id="word"></h1>
+        <input type="text" id="text" autocomplete="off" placeholder="ป้อนคำที่คุณเห็น">
+        <p class="time-containner">เวลา <span id="time"></span> วินาที</p>
+        <p class="score-containner"><span id="score">0</span> คะแนน</p>
+        <div class="gameover-containner" id="gameover">
+            จบเกมส์แล้ว!
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
